@@ -5,7 +5,7 @@
 	margin:0;
 	padding:0;
 }
-* { font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+* { font-family: Georgia, Times, serif; }
 
 img { 
 	max-width: 100%; 
@@ -19,8 +19,12 @@ body {
 	-webkit-text-size-adjust:none; 
 	width: 100%!important; 
 	height: 100%;
+	color: #666666;
+	font-size: 14px;
 }
-
+.sans, .sans * {
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
 
 /* ------------------------------------- 
 		ELEMENTS 
@@ -86,8 +90,39 @@ table.head-wrap { width: 100%;}
 		BODY 
 ------------------------------------- */
 table.body-wrap { width: 100%;}
-
-
+#discount-code {
+	background-color: #e2912e;
+	color: white;
+	font-size: 20px;
+	padding: 10px 20px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	display: block;
+	text-align: center;
+}
+.list-number {
+	background: #e3e3e3;
+	font-size: 20px;
+  color: #999999;
+  padding: 10px 20px;
+  margin-right: 10px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.image-details {
+	width: 96%;
+	margin: -60px auto 0;
+}
+.exp-images {
+	margin-top: 30px;
+	display: block;
+}
+.exp-name  {
+	font-size: 20px;
+	color: #fff;
+}
 /* ------------------------------------- 
 		FOOTER 
 ------------------------------------- */
@@ -100,20 +135,19 @@ table.footer-wrap { width: 100%;	clear:both!important;
 	
 }
 
-
 /* ------------------------------------- 
 		TYPOGRAPHY 
 ------------------------------------- */
 h1,h2,h3,h4,h5,h6 {
-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; line-height: 1.1; margin-bottom:15px; color:#000;
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; line-height: 1.1; margin-bottom:15px; color:#333;
 }
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-size: 60%; color: #6f6f6f; line-height: 0; text-transform: none; }
 
-h1 { font-weight:200; font-size: 44px;}
-h2 { font-weight:200; font-size: 37px;}
-h3 { font-weight:500; font-size: 27px;}
-h4 { font-weight:500; font-size: 23px;}
-h5 { font-weight:900; font-size: 17px;}
+h1 { font-weight:200; font-size: 30px;}
+h2 { font-weight:200; font-size: 24px;}
+h3 { font-weight:500; font-size: 20px;}
+h4 { font-weight:500; font-size: 18px;}
+h5 { font-weight:900; font-size: 16px;}
 h6 { font-weight:900; font-size: 14px; text-transform: uppercase; color:#444;}
 
 .collapse { margin:0!important;}
@@ -167,19 +201,32 @@ ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.s
 /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
 .container {
 	display:block!important;
-	max-width:600px!important;
+	max-width:800px!important;
 	margin:0 auto!important; /* makes it centered */
 	clear:both!important;
 }
 
 /* This should also be a block element, so that it will fill 100% of the .container */
 .content {
-	padding:15px;
-	max-width:600px;
-	margin:0 auto;
-	display:block; 
+	padding:0;
+	margin:0 10%;
+	display:block;
+	background-color: #fff;
 }
-
+.withborder, .noborder {
+	padding: 15px 40px;
+}
+.withborder {
+	border-bottom: 2px solid #e3e3e3;
+}
+.extra-wrap .content {
+	background-color: #333;
+	padding: 10px 0;
+	font-size: 12px;
+}
+.extra-wrap .content a {
+	color: #fff;
+}
 /* Let's make sure tables in the content area are 100% wide */
 .content table { width: 100%; }
 
@@ -220,5 +267,10 @@ ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.s
 	table.social div[class="column"] {
 		width:auto!important;
 	}
-
+	#discount-code {
+		font-size: 16px!important;
+	}
+	.hide {
+		display: none;
+	}
 }
