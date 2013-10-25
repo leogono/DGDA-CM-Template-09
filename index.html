@@ -85,7 +85,7 @@
     }
     #top-bar a {
         font-weight: bold;
-        color: #444444;
+        color: white;
         text-decoration: none;
     }
     #footer {
@@ -113,14 +113,20 @@
     /* Prevent Webkit and Windows Mobile platforms from changing default font sizes on header and footer. */
     .header-content { font-size: 12px; color: #cccccc; }
     .header-content a { font-weight: bold; color: #444444; text-decoration: none; }
+    /*Content*/
+    #top-content, #mid-content, #bot-content, #footer-wrap {
+      text-align: left;
+    }
     .section-title {
       color: #333333;
       font-size: 24px;
       font-weight: normal;
     }
-    #withborder1, #withborder2 {
+    #top-content, #mid-content {
       border-bottom: 2px solid #e3e3e3;
-      padding-bottom: 30px;
+    }
+    #top-content td, #mid-content td {
+      padding-bottom: 15px;
     }
     #discount-code {
       background-color: #e2912e;
@@ -141,7 +147,7 @@
       border-radius: 2px;
     }
     .image-details{
-      margin-top: -50px;
+      margin-top: -60px;
       margin-left: 20px;
       margin-right: 20px;
       padding-bottom: 10px;
@@ -333,7 +339,7 @@
 
   <table id="content-background" cellpadding="0" cellspacing="0" border="0" width="100%">
     <tr><td align="center">
-      <table id="withborder1" class="w640" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+      <table id="top-content" class="w640" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
           <tr><td class="w30" width="30"></td>
               <td class="w580" width="580">
                   
@@ -352,7 +358,7 @@
     </td>
           <td class="w30" width="30"></td></tr>
       </table>
-    <table id="withborder2" class="w640" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+    <table id="mid-content" class="w640" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
       <tr><td class="w30" width="30"></td>
         <td class="w580" width="580">
             
@@ -370,7 +376,7 @@
         </td>
       <td class="w30" width="30"></td></tr>
     </table>
-    <table class="w640" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+    <table id="bot-content" class="w640" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
       <tr><td class="w30" width="30"></td>
         <td class="w580" width="580">
             
@@ -378,7 +384,7 @@
           <p><multiline label='Main Text'>Herunder kommer vi med nogle bud på populære oplevelser, valgt ud fra kvalitet og uforglemmelighed :-) Du kan også bare gå direkte til siden og se alle vores udvalgte oplevelser fra hele landet lige her.</multiline></p>
 
           <repeater>
-            <img editable src="images/sample.png" width="100%" label='Experience Image' />
+            <img editable src="images/sample.png" width="100%" label='Experience Image' style="margin-bottom: 10px;"/>
             <div class="image-details">
               <table width="100%">
                 <tr>
@@ -387,7 +393,7 @@
                       
                   </td>
                   <td class="exp-more" width="30%">
-                    <img src="images/read-more.png" alt="" />
+                    <img editable src="images/read-more.png" alt="" />
                   </td>
                 </tr>
               </table>
