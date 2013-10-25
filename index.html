@@ -121,6 +121,9 @@
       color: #333333;
       font-size: 24px;
       font-weight: normal;
+      padding-top: 15px;
+      padding-bottom: 10px;
+      margin: 0;
     }
     #top-content, #mid-content {
       border-bottom: 2px solid #e3e3e3;
@@ -136,6 +139,8 @@
       -webkit-border-radius: 2px;
       -moz-border-radius: 2px;
       border-radius: 2px;
+      display: block;
+      text-align: center;
     }
     .list-number {
       background: #e3e3e3;
@@ -148,8 +153,8 @@
     }
     .image-details{
       margin-top: -60px;
-      margin-left: 20px;
-      margin-right: 20px;
+      margin-left: 2%;
+      margin-right: 2%;
       padding-bottom: 10px;
     }
     .exp-name {
@@ -158,6 +163,9 @@
     }
     .exp-more {
       text-align: right;
+    }
+    .exp-images {
+      padding-top: 10px;
     }
     /* Mobile-specific Styles */
     @media only screen and (max-device-width: 480px) {
@@ -262,9 +270,9 @@
           font-weight: normal;
         }
         #discount-code {
-            display: block;
-            font-size: 16px;
-            text-align: center;
+          display: block;
+          font-size: 16px;
+          text-align: center;
         }
         .exp-name {
           font-size: 16px;
@@ -282,49 +290,6 @@
     <![endif]-->
 </head>
 <body>
-  <table width="100%" border="0" cellspacing="0" cellpadding="0" id="top-wrap">
-    <tr>
-      <td align="center">
-        <table id="top-bar" class="w640" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="">
-          <tbody>
-            <tr>
-              <td class="w325" width="350" valign="middle" align="left">
-                <table class="w325" width="350" cellpadding="0" cellspacing="0" border="0">
-                  <tbody><tr><td class="w325" width="350" height="8">
-                    <div class="header-content"><webversion>Web version</webversion><span class="hide">&nbsp;&nbsp;|&nbsp; <preferences>Update preferences</preferences>&nbsp;&nbsp;|&nbsp; <unsubscribe>Unsubscribe</unsubscribe></span></div></td></tr></tbody>
-                </table>
-                </td>
-                <td class="w255" width="255" valign="middle" align="right">
-                  <table cellpadding="0" cellspacing="0" border="0">
-                    <tbody>
-                      <tr>
-                        
-                        <td valign="middle"><fblike><img src="https://img.createsend1.com/img/templatebuilder/like-glyph.png" border="0" width="8" height="14" alt="Facebook icon"=""></fblike></td>
-                        <td width="3"></td>
-                        <td valign="middle"><div class="header-content"><fblike>Like</fblike></div></td>
-                        
-                        
-                        <td class="w10" width="10"></td>
-                        <td valign="middle"><tweet><img src="https://img.createsend1.com/img/templatebuilder/tweet-glyph.png" border="0" width="17" height="13" alt="Twitter icon"=""></tweet></td>
-                        <td width="3"></td>
-                        <td valign="middle"><div class="header-content"><tweet>Tweet</tweet></div></td>
-                        
-                        
-                        <td class="w10" width="10"></td>
-                        <td valign="middle"><forwardtoafriend><img src="https://img.createsend1.com/img/templatebuilder/forward-glyph.png" border="0" width="19" height="14" alt="Forward icon"=""></forwardtoafriend></td>
-                        <td width="3"></td>
-                        <td valign="middle"><div class="header-content"><forwardtoafriend>Forward</forwardtoafriend></div></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-          </tbody>
-        </table>
-      </td>
-    </tr>
-  </table>
-
   <!-- end of top-wrap; start of header-image -->
   <table id="header-image" cellpadding="0" cellspacing="0" border="0" width="100%">
     <tr>
@@ -347,10 +312,10 @@
       <div><multiline label='Intro'>Du er nu sikret løbende mails med inspiration til de bedste oplevelsesgaver. Vi håber du bliver rigtig glad for det!</multiline></div>
       <table width="100%">
         <tr>
-          <td>
+          <td width="60%">
             <singleline>Og som lovet - din rabatkode:</singleline>
           </td>
-          <td>
+          <td width="40%">
             <span id="discount-code" class="sans"><singleline label="Discount Code">[CUSTOM FIELD]</singleline></span>
           </td>
         </tr>              
@@ -381,28 +346,26 @@
         <td class="w580" width="580">
             
           <h2 class="sans section-title"><singleline>Hvad kan jeg bruge rabatkoden på?</singleline></h2>
-          <p><multiline label='Main Text'>Herunder kommer vi med nogle bud på populære oplevelser, valgt ud fra kvalitet og uforglemmelighed :-) Du kan også bare gå direkte til siden og se alle vores udvalgte oplevelser fra hele landet lige her.</multiline></p>
+          <multiline label='Main Text'>Herunder kommer vi med nogle bud på populære oplevelser, valgt ud fra kvalitet og uforglemmelighed :-) Du kan også bare gå direkte til siden og se alle vores udvalgte oplevelser fra hele landet lige her.</multiline>
 
           <repeater>
-            <img editable src="images/sample.png" width="100%" label='Experience Image' style="margin-bottom: 10px;"/>
-            <div class="image-details">
-              <table width="100%">
-                <tr>
-                  <td class="exp-name sans" width="70%">
-                    <singleline label="Experience Name">Image title</singleline>
-                      
-                  </td>
-                  <td class="exp-more" width="30%">
-                    <img editable src="images/read-more.png" alt="" />
-                  </td>
-                </tr>
-              </table>
-            </div>
+            <img editable src="images/sample.png" width="100%" label='Experience Image' style="margin-bottom: 10px;" class="exp-images" />
+            <table width="96%" class="image-details">
+              <tr>
+                <td class="exp-name sans" width="70%">
+                  <singleline label="Experience Name">Image title</singleline>
+                    
+                </td>
+                <td class="exp-more" width="30%">
+                  <img editable src="images/read-more.png" alt="" />
+                </td>
+              </tr>
+            </table>
           </repeater>
 
           <table width="100%">
             <tr><td align="center">
-              <img editable src="images/dgda-bottom-text.png" width="348" style="margin-top: 20px;"/>                  
+              <img editable src="images/dgda-bottom-text.png" width="348" style="margin-top: 20px;" />                  
             </td></tr>
             
           </table>
