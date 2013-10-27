@@ -46,8 +46,11 @@
 	  color:#e2912e;
 		text-decoration:none;
 	}
+	.top-header {
+		height: 180px;
+	}
 	.webversion {
-		background: #333;
+		background: #333333;
 		text-align: center;
 		line-height: 20px;
 		font-size: 14px;
@@ -77,8 +80,6 @@
 		background: #e3e3e3;
 		font-size: 20px;
 	  color: #999999;
-	  padding: 10px 20px;
-	  margin-right: 10px;
 	  -webkit-border-radius: 2px;
 	  -moz-border-radius: 2px;
 	  border-radius: 2px;
@@ -101,6 +102,15 @@
 		div[class="header"] {
 		    font-size: 16px !important;
 		}
+		td[class="top-header"] {
+			height: 105px;
+		}
+		img[class="top-img"] {
+			height: 85px;
+		}
+		td[class="contentblock"] h4 {
+			font-size: 20px;
+		}
 		table[class="table"], td[class="cell"] {
 		    width: 340px !important;
 		}
@@ -122,9 +132,9 @@
 		
 	   	<table width="640" cellpadding="0" cellspacing="0" border="0" class="table">
 				<tr>
-					<td id="top-img">
+					<td class="top-header">
 						<div class="webversion" style="color:#e2912e;font-size:12px;font-family:Helvetica,Arial,sans-serif;"><webversion>Web version</webversion></div>
-						<img src="images/top-img.jpg" alt="" width="100%" />
+						<img class="top-img" src="images/top-img.jpg" alt="" width="100%" height="160" />
 					</td>
 				</tr>
 				<tr>
@@ -157,9 +167,9 @@
 						      <p style="height:20px;"></p>
 									<h4 class="sans section-title"><singleline>Sådan bruger du din rabatkode</singleline></h4>
 									<repeater>
-				            <table>
+				            <table cellpadding="5">
 				              <tr>
-				                <td><span class="list-number"><singleline label='Number'>1</singleline></span></td>
+				                <td width="30px" bgcolor="#E3E3E3" align="center" class="list-number"><singleline label='Number'>1</singleline></td>
 				                <td class="list-text"><multiline label='Text'>Når du har fundet den oplevelse du vil gerne vil købe, så klikker du på knappen som oftest hedder ”Køb som gave”.</multiline></td>
 				              </tr>
 				            </table>
