@@ -91,6 +91,7 @@
 	.exp-name  {
 		font-size: 20px;
 		color: #fff;
+		font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
 	}
 	.image-details{
 		background-color: #999999;
@@ -99,26 +100,55 @@
 		background-color: #333333;
 	}
 	@media only screen and (max-device-width: 480px) {
+		body, 
+		table[id="main-table"],
+		td[class="main-td"] {
+			background-color: #ffffff!important;
+		}
 		div[class="header"] {
 		    font-size: 16px !important;
 		}
 		td[class="contentblock"] h4 {
-			font-size: 20px;
+			font-size: 18px;
+		}
+		td[class="contentblock"],
+		td[class="contentblock"] p {
+			font-size: 13px;
 		}
 		table[class="table"], td[class="cell"] {
-		    width: 100% !important;
+		  width: 400px!important;
 		}
 		table[class="hide"], img[class="hide"], td[class="hide"] {
-	          display: none !important;
-	     }
+	    display: none!important;
+	  }
+	  td[class="exp-name"] {
+	  	font-size: 16px;
+	  }
+	  body, #main-table, #main-td {
+			background-color: #ffffff!important;
+		}
+	  td.contentblock h4 {
+	  	font-size: 18px;
+	  }
+	  td.contentblock,
+	  td.contentblock p {
+	  	font-size: 13px;
+	  }
+	  td.exp-name {
+	  	font-size: 16px;
+	  }
+	  table.table,
+	  td.cell {
+	  	width: 400px!important;
+	  }
 	}
 	</style>
 </head>
 <body bgcolor="#e3e3e3" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" style="-webkit-font-smoothing: antialiased;width:100% !important;background-color:#e3e3e3;-webkit-text-size-adjust:none;">
 	
-<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#e3e3e3">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#e3e3e3" id="main-table">
 <tr>
-	<td bgcolor="#e4e4e4" width="100%">
+	<td bgcolor="#e3e3e3" width="100%" id="main-td">
 
 	<table width="640" cellpadding="0" cellspacing="0" border="0" align="center" class="table">
 	<tr>
@@ -164,7 +194,7 @@
 				            <table cellpadding="5">
 				              <tr valign="top">
 				                <td width="40px" align="center" class="list-number"><span><singleline label='Number'>1</singleline></span></td>
-				                <td class="list-text"><multiline label='Text'>Når du har fundet den oplevelse du vil gerne vil købe, så klikker du på knappen som oftest hedder ”Køb som gave”.</multiline></td>
+				                <td class="contentblock"><multiline label='Text'>Når du har fundet den oplevelse du vil gerne vil købe, så klikker du på knappen som oftest hedder ”Køb som gave”.</multiline></td>
 				              </tr>
 				            </table>
 				          </repeater>
@@ -186,7 +216,7 @@
 				            <img editable src="http://placehold.it/560x315" width="100%" label='Experience Image' class="exp-images" alt="" />
 				            <table width="100%" class="image-details" bgcolor="#999999" cellpadding="10">
 				              <tr>
-				                <td class="exp-name sans" width="70%">
+				                <td class="exp-name" width="70%">
 				                  <singleline label="Experience Name">Image title</singleline>
 				                    
 				                </td>
