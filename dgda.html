@@ -32,7 +32,7 @@
 		text-decoration:none;
 	}
 	td.contentblock p { 
-	  	color:#888888;
+	  	color:#666666;
 		font-size:14px;
 		line-height:20px;
 		font-family: Georgia, Times, serif;
@@ -72,12 +72,15 @@
 		display: block;
 		text-align: center;
 	}
-	.list-number {
+	.list-number span {
 		font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
-		background: #e3e3e3;
 		font-size: 20px;
 	  color: #999999;
-	  -webkit-border-radius: 2px;
+		background: #e3e3e3;
+		display: block;
+		line-height: 40px;
+		height: 40px;
+		-webkit-border-radius: 2px;
 	  -moz-border-radius: 2px;
 	  border-radius: 2px;
 	}
@@ -103,7 +106,7 @@
 			font-size: 20px;
 		}
 		table[class="table"], td[class="cell"] {
-		    width: 340px !important;
+		    width: 100% !important;
 		}
 		table[class="hide"], img[class="hide"], td[class="hide"] {
 	          display: none !important;
@@ -124,7 +127,7 @@
 	   	<table bgcolor="#ffffff" width="640" cellpadding="0" cellspacing="0" border="0" class="table">
 				<tr>
 					<td class="top-header">
-						<div class="webversion" style="color:#e2912e;font-size:12px;font-family:Helvetica,Arial,sans-serif;"><webversion>Web version</webversion></div>
+						<div class="webversion" style="color:#e2912e;font-size:12px;font-family:Helvetica,Arial,sans-serif;"><webversion><strong>Web version</strong></webversion></div>
 						<img class="top-img" src="images/top-img.jpg" alt="" width="100%" />
 					</td>
 				</tr>
@@ -159,8 +162,8 @@
 									<h4 class="sans section-title"><singleline>Sådan bruger du din rabatkode</singleline></h4>
 									<repeater>
 				            <table cellpadding="5">
-				              <tr>
-				                <td width="30px" bgcolor="#E3E3E3" align="center" class="list-number"><singleline label='Number'>1</singleline></td>
+				              <tr valign="top">
+				                <td width="40px" align="center" class="list-number"><span><singleline label='Number'>1</singleline></span></td>
 				                <td class="list-text"><multiline label='Text'>Når du har fundet den oplevelse du vil gerne vil købe, så klikker du på knappen som oftest hedder ”Køb som gave”.</multiline></td>
 				              </tr>
 				            </table>
@@ -225,8 +228,8 @@
 		<td>
 			<table width="640" cellpadding="0" cellspacing="0" border="0" class="table" align="center">
 				<tr>
-					<td class="cell">
-						<p style="color:#c9c9c9;font-size:12px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;"><preferences style="color:#e2912e;text-decoration:none;"><strong>Edit your subscription</strong></preferences>&nbsp;&nbsp;|&nbsp;&nbsp;<unsubscribe style="color:#e2912e;text-decoration:none;"><strong>Unsubscribe instantly</strong></unsubscribe></p>
+					<td class="cell" align="center">
+						<p style="color:#c9c9c9;font-size:12px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;"><unsubscribe style="color:#e2912e;text-decoration:none;"><strong>Afmeld dig nyhedsbrevet</strong></unsubscribe></p>
 					</td>
 				</tr>
 			</table>
