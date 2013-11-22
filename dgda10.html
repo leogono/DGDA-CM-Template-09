@@ -183,19 +183,33 @@
 									<multiline label='Main Text'>Herunder kommer vi med nogle bud på populære oplevelser, valgt ud fra kvalitet og uforglemmelighed :-) Du kan også bare gå direkte til siden og se alle vores udvalgte oplevelser fra hele landet lige her.</multiline>
 
 									<repeater>
-										<p></p>
-				            <img editable src="http://placehold.it/560x315" width="100%" label='Experience Image' class="exp-images" alt="" />
-				            <table width="100%" class="image-details" bgcolor="#999999" cellpadding="10">
-				              <tr>
-				                <td class="exp-name" width="70%">
-				                  <singleline label="Experience Name">Image title</singleline>
-				                    
-				                </td>
-				                <td class="exp-more" width="30%" align="right">
-				                  <img editable src="images/read-more.png" alt="" width="134" label="Read More Image" />
-				                </td>
-				              </tr>
-				            </table>
+										
+				            <layout label="Image with Title Block">
+				            	<p></p>
+				            	<img editable src="http://placehold.it/560x315" width="100%" label='Experience Image' class="exp-images" alt="" />
+					            <table width="100%" class="image-details" bgcolor="#999999" cellpadding="10">
+					              <tr>
+					                <td class="exp-name" width="70%">
+					                  <singleline label="Experience Name">Image title</singleline>
+					                    
+					                </td>
+					                <td class="exp-more" width="30%" align="right">
+					                  <img editable src="images/read-more.png" alt="" width="134" label="Read More Image" />
+					                </td>
+					              </tr>
+					            </table>
+				            </layout>
+				            <layout label="Image with Simple Description">
+				            	<p></p>
+				            	<img editable src="http://placehold.it/560x315" width="100%" label='Experience Image' class="exp-images" alt="" />
+					            <table width="100%" class="image-desc" cellpadding="10">
+					            	<tr>
+					            		<td>
+					            			<multiline label='Image Description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quisquam, nisi harum mollitia consequatur quo provident dolor sit reiciendis sint iste laudantium eaque incidunt earum accusamus doloribus dignissimos. Minus, libero?</multiline>
+					            		</td>
+					            	</tr>
+					            </table>
+				            </layout>
 				          </repeater>
 
 				          <table width="100%">
